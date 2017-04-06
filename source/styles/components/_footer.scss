@@ -1,0 +1,48 @@
+.Footer {
+  background-color:black;
+  color:white;
+  margin-top:40px;
+
+  @media($mq-phone) {
+    margin-top: 80px;
+  }
+}
+
+.Footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 0;
+  border-top:1px solid #4d4d4d;
+
+  @media($mq-phone) {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.Footer-links {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media($mq-phone) {
+    font-size: 0.8rem;
+  }
+
+  a {
+    padding:0 15px;
+
+    @media($mq-phone) {
+      padding: 0 5px;
+    }
+  }
+}
+
+.Footer-copyright {
+  font-weight: 200;
+
+  @media($mq-phone) {
+    padding-top: 10px;
+  }
+}

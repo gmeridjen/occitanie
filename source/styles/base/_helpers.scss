@@ -1,0 +1,5 @@
+.HideMobile {
+  @media($mq-phone) {
+    display: none;
+  }
+}

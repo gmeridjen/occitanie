@@ -1,0 +1,31 @@
+// ======
+// Mixins
+// ======
+
+
+// Switch to grayscale font smoothing on OSX
+@mixin osx-font-smoothing-grayscale {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin button {
+  padding:15px 20px;
+  font-size:1rem;
+  font-weight:700;
+  text-transform: uppercase;
+  text-align: center;
+  display:inline-block;
+  height:100%;
+  border:none;
+  background: transparent;
+
+  @media ($mq-phone) {
+    font-size:0.7rem;
+    padding:10px;
+  }
+
+  @hover {
+    text-decoration: none;
+  }
+}

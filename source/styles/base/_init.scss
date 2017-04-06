@@ -1,0 +1,108 @@
+// ================
+// Init page styles
+// ================
+
+// ------------------------------------
+// Reset (in addition to normalize.css)
+// ------------------------------------
+
+// Default box model
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+// Additionnal reset styles for very common stuff
+// Normalize tries to only remove differences between browsers.
+// If we want an actual reset, we need to reset the styles of
+// just a handful of elements.
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+p, ul, ol, figure {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: $brand-red;
+  }
+}
+
+small { font-size: 67%; }
+
+button {
+  padding: 0;
+  border: none;
+  outline: 0;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+// Here we contradict Normalize
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+// Force images and frames to fit their container at most
+iframe {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+// Other small fixes
+::-ms-clear {
+  display: none;
+}
+
+// --------
+// Document
+// --------
+
+html {
+  font-size:125%; // roughly 20px
+
+}
+
+body {
+  font-size: 0.7rem; // roughly 16px
+  font-family: 'Overpass', sans-serif;
+  background: #e5e5e5 url('../img/pattern.png');
+}
+
+.Wrapper {
+  width: 1140px;
+  margin:0 auto;
+  position: relative;
+
+  @media($mq-desktop-small) {
+    width:960px;
+  }
+
+  @media($mq-tablet) {
+    width:750px;
+  }
+
+  @media($mq-phone) {
+    width: 100%;
+  }
+}

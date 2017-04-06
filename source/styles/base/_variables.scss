@@ -1,0 +1,55 @@
+// ===========================
+// Global Settings (variables)
+// ===========================
+// Organize by category, e.g. dimensions,
+// breakpoints, z-indexes, colors, etc.
+
+
+// ----------------
+// Asset management
+// ----------------
+// Config for when using the asset("some/path") function.
+
+$asset-query-string: "v1";
+
+
+// -------------
+// Media queries
+// -------------
+
+@import "mq-build";
+
+// Breakpoints
+$start-tablet: 768px;
+$start-desktop-small: 990px;
+$start-desktop: 1200px;
+$start-desktop-large: 1540px;
+
+// Pre-built media queries
+// Example usage: @media ($mq-desktop) { … }
+
+$mq-phone: mq-build($maxw: $start-tablet);
+
+$mq-tablet: mq-build($minw: $start-tablet, $maxw: $start-desktop-small);
+$mq-desktop-small: mq-build($minw: $start-desktop-small, $maxw: $start-desktop);
+$mq-desktop: mq-build($minw: $start-desktop);
+
+$mq-upto-tablet: mq-build($maxw: $start-desktop-small);
+$mq-from-tablet: mq-build($minw: $start-tablet);
+
+
+// -------------------
+// Brand/design colors
+// -------------------
+// Tip: Only create variables for brand colors,
+// not for every single possible shade of grey.
+
+$brand-red: #fb4239;
+$color-text: #333;
+
+
+// -------------------
+// initial value for text-align for ie11 compliance
+// -------------------
+
+$initial : left;

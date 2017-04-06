@@ -1,0 +1,204 @@
+.Preheader {
+  background-color:white;
+}
+
+.Preheader-container {
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  min-height: 50px;
+  position:relative;
+
+  > div {
+    display:flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+
+  @media($mq-desktop) {
+    background-image: url('../../public/img/intranet.png');
+    background-repeat: no-repeat;
+    background-position:160px bottom;
+  }
+}
+
+// UserMenu
+
+.Preheader-userMenu {
+  padding: 0 20px;
+  border-right:3px solid #e5e5e5;
+  background: white;
+  position:relative;
+}
+
+.Preheader-userMenuTrigger {
+  span {
+    @media($mq-phone) {
+      display:none;
+    }
+  }
+}
+
+.Preheader-userName {
+  margin: 0 10px;
+  font-weight: 200;
+}
+
+.Preheader-userSubMenu {
+  position:absolute;
+  z-index:10;
+  top:50px;
+  left:0;
+  background-color:white;
+  width: 100%;
+  padding:20px;
+  border-top: 3px solid #e5e5e5;
+
+  @media($mq-phone) {
+    width:180px;
+  }
+}
+
+.Preheader-userSubMenu--hidden {
+  display:none;
+}
+
+.Preheader-userSubMenuItem {
+  padding:10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+// Notifications
+
+.Preheader-notifications {
+  position: relative;
+  width:40px;
+  padding-left:20px;
+  border-right:3px solid #e5e5e5;
+  box-sizing: content-box;
+  background: white;
+
+  @media($mq-phone) {
+    display:none !important;
+  }
+}
+
+.Preheader-notificationsCount {
+  position:absolute;
+  top:8px;
+  right:8px;
+  background: #fb4239;
+  width: 20px;
+  height:20px;
+  border-radius: 100%;
+  text-align: center;
+  color: white;
+  font-weight:700;
+  font-size: 0.6rem;
+  padding-top:5px;
+}
+
+.Preheader-notificationsLink {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index:10;
+}
+
+// Email
+
+.Preheader-contact {
+  border-right:3px solid #e5e5e5;
+  padding:0 20px;
+  position:relative;
+  background: white;
+
+  @media($mq-phone) {
+    display:none !important;
+  }
+}
+
+.Preheader-contactLink {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index:10;
+}
+
+// Link
+
+.Preheader-website {
+  padding:0 20px;
+  position:relative;
+  background: white;
+
+  @media($mq-phone) {
+    display:none !important;
+  }
+}
+
+.Preheader-websiteLink {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index:10;
+}
+
+// Directory
+
+.Preheader-directory {
+  padding:0 30px;
+  background-color: #ffdc2a;
+  position:relative;
+
+  span {
+    padding-left:10px;
+  }
+
+  @media($mq-phone) {
+    display:none !important;
+  }
+}
+
+.Preheader-directoryLink {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index:10;
+}
+
+// Mobile items (hidden in other modes)
+
+.Preheader-searchMobile {
+  display:none !important;
+
+  @media($mq-phone){
+    display:flex !important;
+    padding:0 20px;
+    border-right:3px solid #e5e5e5;
+    background-color:white;
+  }
+
+  img {
+    height: 20px;
+  }
+}
+
+.Preheader-menuMobile {
+  display:none !important;
+
+  @media($mq-phone){
+    display:flex !important;
+    padding:0 20px;
+    background-color:white;
+  }
+}

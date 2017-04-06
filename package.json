@@ -1,0 +1,29 @@
+{
+  "name": "assets-builder",
+  "private": true,
+  "version": "3.0.2",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "glob": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.2.1",
+    "gulp-util": "^3.0.7",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "dependencies": {
+    "sass-mq-build": "^1.0.0"
+  }
+}
